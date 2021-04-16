@@ -20,5 +20,4 @@
 13. Save the deployment config change and reload it. Check the project pods, you will notice that SSO container was restarted.
 14. Open the SSO pod terminal and run this commands to check wheater the patch was applied successfully:
     - `/opt/eap/bin/jboss-cli.sh`
-    - `connect`
-    - `patch history`
+    - `patch info`
