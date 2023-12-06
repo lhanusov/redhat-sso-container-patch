@@ -8,7 +8,7 @@ spec:
     - type: ImageChange
   source:
     git:
-      uri: https://gitlab.cee.redhat.com/aszczucz/rh-sso-container-patch.git
+      uri: https://github.com/lhanusov/redhat-sso-container-patch.git
   strategy:
     dockerStrategy:
       env:
@@ -17,7 +17,7 @@ spec:
       from:
         kind: ImageStreamTag
         namespace: openshift
-        name: sso74-openshift-rhel8:latest
+        name: sso76-openshift-rhel8:latest
   output:
     to:
       kind: ImageStreamTag

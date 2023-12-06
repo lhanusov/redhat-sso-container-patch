@@ -2,7 +2,7 @@
 
 set -exuo pipefail
 
-version="${1:?Specify base version for the patch, ex: 7.4.7}"
+version="7.6.6-patch"
 
 rm patch.zip
 cd patch
