@@ -1,1 +1,55 @@
-*.swp
+# OS stuff
+###################
+.DS_Store
+
+# Intellij
+###################
+.idea
+*.iml
+!.idea/icon.png
+
+# Eclipse #
+###########
+.project
+.settings
+.classpath
+# reverting this as e.g. /distribution/feature-packs/server-feature-pack/src/main/resources/content/bin/
+# should not be ignored
+#bin/
+.factorypath
+
+
+# NetBeans #
+############
+nbactions.xml
+nb-configuration.xml
+catalog.xml
+nbproject
+
+# VS Code #
+###########
+*.code-workspace
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Python byte-compiled files #
+##############################
+*.pyc
+
+# Logs and databases #
+######################
+*.log
+.attach_pid*
+
+# Git ephemeral files
+*.versionsBackup
+
+# SDKMAM environment file
+.sdkmanrc
