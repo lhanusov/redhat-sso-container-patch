@@ -1,11 +1,13 @@
 # RH-SSO Openshift Container Patch - appliable for Developer templates only!
-## Compatibility -> 7.4.6.GA or latest
+## Compatibility -> 7.6.0.GA or latest
 
 1. Clone this patch repository and push it to your git web repository manager e.g. Github, Gitlab etc. 
-2. Replace `patch.zip` with the desired patch (defaults to 7.4.6 no-op patch from `generate-noop-patch.sh`).
+2. Replace `patch.zip` with the desired patch (defaults to 7.6.6 no-op patch from `generate-noop-patch.sh`).
 3. Update `sso-patch_buildconfig.yaml`:
-    - Change dockerStrategy `from` version if required (defaults to RH-SSO 7.4)
+    - Change dockerStrategy `from` version if required (defaults to RH-SSO 7.6)
     - Change git `uri` to your cloned repository (defaults to the original)
+4. Update Dockerfile (if you need to use different parent image)
+    - `FROM <<your_parent_image>>`
 4. Add, commit, and push your changes to your copy of this repo.
 5. Run CLI login command. Copy command shown on this page `https://{{openshifthostnamegoeshere}}/oauth/token/request`.
     - {{openshifthostnamegoeshere}} => replace it with your Openshift instance hostname
