@@ -1,4 +1,4 @@
-FROM openshift/sso74-openshift-rhel8:latest
+FROM openshift/sso76-openshift-rhel8:latest
 
 ADD patch.zip /tmp/
 

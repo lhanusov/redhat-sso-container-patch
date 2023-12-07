@@ -2,16 +2,16 @@
 
 <patch xmlns="urn:jboss:patch:1.2" id="rhsso-noop">
     <description>
-        (7.4.6 patch) No-op
+        (7.6.6 patch) No-op
     </description>
-    <no-upgrade name="Red Hat Single Sign-On" version="7.4.6.GA"/>
-    <element id="layer-keycloak-rh-sso-7.4.6">
+    <no-upgrade name="Red Hat Single Sign-On" version="7.6.6.GA"/>
+    <element id="layer-keycloak-rh-sso-7.6.6">
         <description>
             No description available
         </description>
         <no-upgrade name="keycloak"/>
     </element>
-    <element id="layer-base-rh-sso-7.4.6">
+    <element id="layer-base-rh-sso-7.6.6">
         <description>
             No description available
         </description>
